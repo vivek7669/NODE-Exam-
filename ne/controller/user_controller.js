@@ -28,7 +28,7 @@ const deletedata = async(req,res) =>{
 // registration
 
 const registration = async(req,res) => {
-        let data = await user.create(req.body);  l
+        let data = await user.create(req.body);  
         res.send(data);
 }
 
