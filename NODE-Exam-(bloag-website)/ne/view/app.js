@@ -1,3 +1,4 @@
+import { navbar } from "../components/navbar.js";
 // const checkdata = async(email) => {
 //     const url =  (`http://localhost:3040/user/${email}`);
 //     const req = await fetch(url);
@@ -5,11 +6,18 @@
 //     return res;
 // }
 
+
 let map ;
 
 if(!localStorage.getItem("uid")){
     location.href = "./web/login.html";
 }
+
+let navb = document.querySelector(".navbar_dis");
+navb.innerHTML = navbar();
+document.querySelector(".Home").classList.add("text-muted");
+document.querySelector(".Sign_Up").classList.remove("text-muted");
+document.querySelector(".Sign_In").classList.remove("text-muted");
 
 const mapper = (data) => {
     document.querySelector(".displaydata").innerHTML = "";

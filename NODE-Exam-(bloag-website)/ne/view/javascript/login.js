@@ -1,5 +1,13 @@
+import { navbar } from "../../components/navbar.js";
+
 let lfcount = Number(0);
 
+
+let navb = document.querySelector(".navbar_dis");
+navb.innerHTML = navbar();
+document.querySelector(".Sign_In").classList.add("text-muted");
+document.querySelector(".Sign_Up").classList.remove("text-muted");
+document.querySelector(".Home").classList.remove("text-muted");
 
 if(localStorage.getItem("lfcount") >= 3){
     alert("limit exceeded");

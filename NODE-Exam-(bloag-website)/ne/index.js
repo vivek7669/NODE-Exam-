@@ -7,7 +7,7 @@ const bloagrouter = require("./routes/bloag_router");
 const app = express();
 app.use(express.json());
 app.use(cors());
-const port = 3040;
+const port = process.env.PORT || 3040;
 
 app.get("/",(req,res)=>{
     res.send("Welcome To My Server.");

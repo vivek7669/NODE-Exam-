@@ -18,36 +18,28 @@
 </head>
 
 <body>
-
+    <div class="navbar_dis container-fluid bg-dark"></div>
         <div class="container d-flex justify-content-center parant border rounded shadow mt-3">
             <div class="formbox container d-flex justify-content-center w-100">
                 <form id="userdata" class=" px-3 py-4 w-100">
                     <h2>Task Page</h2><br>
                     <div class="form-group">
                         <label for="name">Bloag Title:</label>
-                        <input type="text" class="form-control" id="tname" placeholder="Enter Bloag Title..." required>
+                        <input type="text" class="form-control" id="bname" placeholder="Enter Bloag Title..." required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Bloag Content:</label>
-                        <input type="text" class="form-control" id="tdesc" placeholder="Enter Bloag Content..." required>
+                        <label for="cont">Bloag Content:</label>
+                        <input type="text" class="form-control" id="bcontent" placeholder="Enter Bloag Content..." required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Bloag Poster:</label>
-                        <input type="text" class="form-control" id="tdesc" placeholder="Enter Bloag Poster..." required>
+                        <label for="poster">Bloag Poster:</label>
+                        <input type="url" class="form-control" id="tpost" placeholder="Enter Bloag Poster..." required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Bloag Author:</label>
-                        <input type="text" class="form-control" id="tdesc" placeholder="Enter Bloag Author..." required>
+                        <label for="auth">Bloag Author:</label>
+                        <input type="text" class="form-control" id="bauth" placeholder="Enter Bloag Author..." required>
                     </div>
-                    <div class="form-group">
-                        <label for="password">Task Status:</label>
-                        <select name="" id="tstaus" class="custom-select">
-                            <option value="pendding" class="text-muted" selected>Pendding</option>
-                            <option value="on_progress">On Progress</option>
-                            <option value="completed">C ompleted</option>
-                        </select>
-                    </div>
-                    <input type="submit" class="btn btn-secondary float-right" value="Save Task">
+                    <input type="submit" class="btn btn-secondary float-right" value="Save Bloag">
                 </form>
             </div>
         </div>
