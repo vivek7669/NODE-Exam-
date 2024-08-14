@@ -21,19 +21,19 @@ const checkdata = async (email) => {
     return res;
 }
 
-const dataposting = async (udata) => {
-    console.log(udata);
-    const url = ("http://localhost:3040/user/signup");
-    const options = {
-        method: "POST",
-        headers: { "Content-type": "application/json" },
-        body: JSON.stringify(udata)
-    }
+// const dataposting = async (udata) => {
+//     console.log(udata);
+//     const url = ("http://localhost:3040/user/signup");
+//     const options = {
+//         method: "POST",
+//         headers: { "Content-type": "application/json" },
+//         body: JSON.stringify(udata)
+//     }
     
-    const req = await fetch(url, options);
-    const res = await req.json();
-    console.log(res);
-}
+//     const req = await fetch(url, options);
+//     const res = await req.json();
+//     console.log(res);
+// }
 
 
 const getdata = async (e) => {
@@ -66,8 +66,8 @@ const getdata = async (e) => {
     }
     else {
         if (data.password == userdata.password) {
-            let date = new Date();
-            date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
+            // let date = new Date();
+            // date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
             alert("Login Successfully Completed.");
             // document.cookie = `uid=${data._id}expires=${date.toUTCString()}path="/"`
             localStorage.setItem("uid",data._id)

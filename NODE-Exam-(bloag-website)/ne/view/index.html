@@ -22,22 +22,26 @@
         <div class="container d-flex justify-content-center parant border rounded shadow mt-3">
             <div class="formbox container d-flex justify-content-center w-100">
                 <form id="userdata" class=" px-3 py-4 w-100">
-                    <h2>Task Page</h2><br>
+                    <h2>Bloag Page</h2><br>
                     <div class="form-group">
                         <label for="name">Bloag Title:</label>
-                        <input type="text" class="form-control" id="bname" placeholder="Enter Bloag Title..." required>
+                        <input type="text" class="form-control" id="bname" placeholder="Enter Bloag Title..." >
                     </div>
                     <div class="form-group">
                         <label for="cont">Bloag Content:</label>
-                        <input type="text" class="form-control" id="bcontent" placeholder="Enter Bloag Content..." required>
+                        <input type="text" class="form-control" id="bcontent" placeholder="Enter Bloag Content..." >
                     </div>
                     <div class="form-group">
                         <label for="poster">Bloag Poster:</label>
-                        <input type="url" class="form-control" id="tpost" placeholder="Enter Bloag Poster..." required>
+                        <input type="url" class="form-control" id="bpost" placeholder="Enter Bloag Poster..." >
                     </div>
                     <div class="form-group">
                         <label for="auth">Bloag Author:</label>
-                        <input type="text" class="form-control" id="bauth" placeholder="Enter Bloag Author..." required>
+                        <input type="text" class="form-control" id="bauth" placeholder="Enter Bloag Author..." >
+                    </div>
+                    <div class="form-group">
+                        <label for="auth">Bloag Date:</label>
+                        <input type="date" class="form-control" id="bdate" >
                     </div>
                     <input type="submit" class="btn btn-secondary float-right" value="Save Bloag">
                 </form>
@@ -45,7 +49,11 @@
         </div>
 
 
-        <div class="displaydata"></div>
+        <div class="container mt-5">
+            <h1 class="text-center">Bloag List</h1>
+        </div>
+        <div class="container mt-3 displaydata">
+        </div>
 
 
         <script type="module" src="./app.js"></script>

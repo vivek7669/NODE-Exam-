@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const bloag_schema = new mongoose.Schema({
+    uid:String,
     title: String,
     content: String,
     bimg : String,
