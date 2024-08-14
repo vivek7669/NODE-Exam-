@@ -1,3 +1,13 @@
+import { navbar } from "../../components/navbar.js";
+
+
+
+let navb = document.querySelector(".navbar_dis");
+navb.innerHTML = navbar();
+document.querySelector(".Sign_Up").classList.add("text-muted");
+document.querySelector(".Home").classList.remove("text-muted");
+document.querySelector(".Sign_In").classList.remove("text-muted");
+
 const checkdata = async(email) => {
     const url =  (`http://localhost:3040/user/${email}`);
     const req = await fetch(url);
@@ -17,6 +27,9 @@ const dataposting = async(udata) => {
     const req = await fetch(url, options);
     const res = await req.json();
     console.log(res);
+    if(res){
+        location.href = "./login.html"
+    }
 } 
 
 
